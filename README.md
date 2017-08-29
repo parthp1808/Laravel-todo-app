@@ -8,7 +8,7 @@ Now clone this app by running this command =><b> git clone https://github.com/pa
 Or you can simply download zip file and unzip it.
 
 Now go inside the folder and using console, run composer by executing => <b>composer install</b>
-Now run using cmd => <b>copy .env.example .env</b>
+Now run using cmd => <b>cp .env.example .env</b>
 Now edit .env file :
 <h3>Replace below lines</h3>
 <i><br/>
