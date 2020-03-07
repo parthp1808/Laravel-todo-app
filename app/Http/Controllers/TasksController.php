@@ -21,6 +21,9 @@ class TasksController extends Controller
 
     public function create(Request $request)
     {
+        $this->validate($request, [
+            'description' => 'required'
+        ]);
     	$task = new Task();
     	$task->description = $request->description;
     	$task->user_id = Auth::id();
@@ -48,6 +51,9 @@ class TasksController extends Controller
     	}
     	else
     	{
+            $this->validate($request, [
+                'description' => 'required'
+            ]);
     		$task->description = $request->description;
 	    	$task->save();
 	    	return redirect('/'); 
